@@ -1,0 +1,822 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"> <head profile="http://gmpg.org/xfn/11">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="airnavigation.aero" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <meta name="rating" content="general" />
+        <meta name="copyright" content="2017, Air Navigation" />
+        <meta name="expires" content="never"/>
+        <meta name="distribution" content="global" />
+
+                <link rel="shortcut icon" href="http://airnavigation.aero/wp-content/uploads/2015/01/64px_AN_favicon.ico">
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+            <title>Flight-planning and navigation app: iOS, Android, Mac OS X.</title>
+
+            <link rel="stylesheet" href="http://airnavigation.aero/wp-content/themes/airnavtheme/style.css" type="text/css" media="screen" />
+
+            <!--[if IE 7]>
+             <link rel="stylesheet" href="http://airnavigation.aero/wp-content/themes/airnavtheme/css/font-awesome-ie7.min.css">
+             <![endif]-->
+
+
+            <!-- Just for debugging purposes. Don't actually copy this line! -->
+                    <!--[if lt IE 9]><script src="http://airnavigation.aero/wp-content/themes/airnavtheme/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+            <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <![endif]-->
+
+            <!-- Custom styles for this template -->
+
+
+<!-- All in One SEO Pack 2.3.11.4 by Michael Torbert of Semper Fi Web Design[813,836] -->
+<meta name="description"  content="Air Navigation: Your high quality GPS navigation application for VFR pilots available on iOS, Android and Desktop." />
+
+<meta name="keywords"  content="Air Navigation, VFR app, navigation app for android, navigation app for iphone, pilot app, VFR, IFR, VFR-charts, IFR-charts, VFR charts, IFR charts, GPS for pilots, amateur pilots, hobby pilots, hobby pilot, pilot navigation, pilot navigation app, airplane, aircraft, aircraft navigation, aircraft navigation app, aircraft navigation application, GPS, GPS for aircraft, GPS for airplanes, GPS for helicopters, helicopter navigation, air nav, air nav pro, air navigation pro, air navigation pro maps, air nav pro maps," />
+
+<link rel="canonical" href="http://airnavigation.aero/" />
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-68116913-1', { 'cookieDomain': 'airnavigation.aero','allowLinker': true } );
+			ga('require', 'linker');
+			ga('linker:autoLink', ['airnavigation.aero/fr', 'airnavigation.aero/de', 'airnavigation.aero/es', 'airnavigation.aero/pt'] );
+			ga('require', 'linkid', 'linkid.js');
+			ga('send', 'pageview');
+			</script>
+					<script type="text/javascript">
+						function recordOutboundLink(link, category, action) {
+														ga('send', 'event', category, action);
+														if (link.target == '_blank') return true;
+							setTimeout('document.location = "' + link.href + '"', 100);
+							return false;
+						}
+						/* use regular Javascript for this */
+						function getAttr(ele, attr) {
+							var result = (ele.getAttribute && ele.getAttribute(attr)) || null;
+							if (!result) {
+								var attrs = ele.attributes;
+								var length = attrs.length;
+								for (var i = 0; i < length; i++)
+									if (attr[i].nodeName === attr) result = attr[i].nodeValue;
+							}
+							return result;
+						}
+
+						function aiosp_addLoadEvent(func) {
+							var oldonload = window.onload;
+							if (typeof window.onload != 'function') {
+								window.onload = func;
+							} else {
+								window.onload = function () {
+									if (oldonload) {
+										oldonload();
+									}
+									func();
+								}
+							}
+						}
+
+						function aiosp_addEvent(element, evnt, funct) {
+							if (element.attachEvent)
+								return element.attachEvent('on' + evnt, funct);
+							else
+								return element.addEventListener(evnt, funct, false);
+						}
+
+						aiosp_addLoadEvent(function () {
+							var links = document.getElementsByTagName('a');
+							for (var x = 0; x < links.length; x++) {
+								if (typeof links[x] == 'undefined') continue;
+								aiosp_addEvent(links[x], 'onclick', function () {
+									var mydomain = new RegExp(document.domain, 'i');
+									href = getAttr(this, 'href');
+									if (href && href.toLowerCase().indexOf('http') === 0 && !mydomain.test(href)) {
+										recordOutboundLink(this, 'Outbound Links', href);
+									}
+								});
+							}
+						});
+					</script>
+					<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Air Navigation &raquo; Home Comments Feed" href="http://airnavigation.aero/home/feed/" />
+<link rel='stylesheet' id='bs_bootstrap-css'  href='http://airnavigation.aero/wp-content/plugins/bootstrap-shortcodes/css/bootstrap.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bs_shortcodes-css'  href='http://airnavigation.aero/wp-content/plugins/bootstrap-shortcodes/css/shortcodes.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='select2-css'  href='http://airnavigation.aero/wp-content/plugins/beautiful-taxonomy-filters/public/css/select2.min.css?ver=2.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='beautiful-taxonomy-filters-basic-css'  href='http://airnavigation.aero/wp-content/plugins/beautiful-taxonomy-filters/public/css/beautiful-taxonomy-filters-base.min.css?ver=2.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='http://airnavigation.aero/wp-content/plugins/captcha/css/front_end_style.css?ver=4.2.8' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://airnavigation.aero/wp-includes/css/dashicons.min.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css'  href='http://airnavigation.aero/wp-content/plugins/captcha/css/desktop_style.css?ver=4.2.8' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://airnavigation.aero/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='prefix-style-css'  href='http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/style.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elusive-style-css'  href='http://airnavigation.aero/wp-content/plugins/widget-icon/assets/elusive/css/elusive-webfont.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-style-css'  href='http://airnavigation.aero/wp-content/plugins/widget-icon/assets/font-awesome/css/font-awesome.min.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-icon-front-style-css'  href='http://airnavigation.aero/wp-content/plugins/widget-icon/css/widget-icon-front.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='video_styles-css'  href='http://airnavigation.aero/wp-content/plugins/wp-video-gallery/includes/wpvg-sliders-style.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://airnavigation.aero/wp-content/tablepress-combined.min.css?ver=7' type='text/css' media='all' />
+<link rel='stylesheet' id='newsletter-subscription-css'  href='http://airnavigation.aero/wp-content/plugins/newsletter/subscription/style.css?ver=4.7.9' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.4 - Universal enabled - https://www.monsterinsights.com/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-74672923-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type='text/javascript' src='http://airnavigation.aero/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/bootstrap-shortcodes/js/bootstrap.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/bootstrap-shortcodes/js/init.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/wp-google-analytics-events/js/ga-scroll-events.js?ver=2.4.1'></script>
+<link rel='https://api.w.org/' href='http://airnavigation.aero/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://airnavigation.aero/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://airnavigation.aero/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='http://airnavigation.aero/' />
+<link rel="alternate" type="application/json+oembed" href="http://airnavigation.aero/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fairnavigation.aero%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://airnavigation.aero/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fairnavigation.aero%2F&#038;format=xml" />
+
+<!-- BEGIN GADWP v4.9.6.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-60390465-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+        <script>
+                if (typeof ga === 'undefined') {
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                  ga('create','UA-74672923-1', 'airnavigation.aero');                  ga('send', 'pageview');
+                                }
+            </script>
+
+
+    </head>
+
+    <body>
+
+<!--  NO MULTI LAnguage Support (To enable, remover this comment and the // comments in the php code)
+ Added back at Celines request
+-->
+
+
+<div  class="translang langu"  style="z-index: 9999; top: 8px; position: fixed">
+<a href ="http://www.airnavigation.aero"><img alt = "English" title = "English " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/english.png" ></a><a href ="http://www.airnavigation.aero/fr"><img alt = "French" title = "French " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/french.png" ></a><a href ="http://www.airnavigation.aero/pt"><img alt = "Portugal" title = "Portugal " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/portugal.png" ></a><a href ="http://www.airnavigation.aero/de"><img alt = "German" title = "German " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/germany.png" ></a><a href ="http://www.airnavigation.aero/es"><img alt = "Spain" title = "Spain " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/spain.png" ></a></div>
+
+
+
+
+
+            <!-- Header 1 Start ================================================== -->
+
+            <section class="logo-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="logo-top">
+                                <a href="http://airnavigation.aero/">
+                                    <img src="http://airnavigation.aero/wp-content/uploads/2015/01/logo_white.png" alt="" />
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Header 1 Carousel ================================================== -->
+
+            <section class="home-slider">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+
+                            <div class="item">
+				<img src="http://airnavigation.aero/wp-content/uploads/2015/01/Untitled-1.jpg" alt="Untitled-1.jpg">
+                                <div class="col-md-12 col-sm-12 col-xs-12 slider-text">
+                                   <!-- <h3>  </h3> -->
+                                    &nbsp;
+<h1 class="hel-medium" style="text-align: left;"></h1>
+<h1 class="hel-medium" style="text-align: left;"><span style="color: #ffcc00;">We love flying!</span></h1>
+<h4 class="hel-medium" style="text-align: left;">We develop flight-planning and real-time navigation</h4>
+<h4 class="hel-medium" style="text-align: left;">applications for <strong><span style="color: #ffcc00;">iOS</span></strong>, <strong><span style="color: #ffcc00;">Android</span></strong></h4>
+<h4 class="hel-medium" style="text-align: left;">and <strong><span style="color: #ffcc00;">Mac OS X</span></strong></h4>
+<h5 class="hel-conblack" style="text-align: center;"><span style="color: #ffcc00;"><a style="color: #ffcc00;" href="http://airnavigation.aero/product-inner/#ourapps" target="_blank">MORE ABOUT OUR APPS</a></span></h5>
+                                                                                                                <div class="sliderbtn"> <a href="http://airnavigation.aero/product-inner/products-pricing/" class="yellow-btn"> GET IT NOW! </a> </div>
+                                                                    </div>
+                            </div>
+
+
+                            <div class="item">
+				<img src="http://airnavigation.aero/wp-content/uploads/2015/01/B2C-banner2c.jpg" alt="B2C-banner2c.jpg">
+                                <div class="col-md-12 col-sm-12 col-xs-12 slider-text">
+                                   <!-- <h3>  </h3> -->
+                                    <h3 style="text-align: left;"></h3>
+<h3 style="text-align: left;"><span style="color: #ffcc00;"><strong> Plan </strong></span> your flight from home</h3>
+<h3 style="text-align: left;">and <span style="color: #ffcc00;"><strong> synchronize </strong></span> it with your</h3>
+<h3 style="text-align: left;"><span style="color: #ffcc00;"><strong> tablet </strong></span> or <span style="color: #ffcc00;"><strong> smartphone. </strong></span></h3>
+<h3></h3>
+<h5 class="hel-conblack" style="text-align: left;"><span style="color: #ffcc00;"><a style="color: #ffcc00;" href="http://airnavigation.aero/product-inner/#ourapps" target="_blank">MORE ABOUT OUR APPS</a></span></h5>
+                                                                                                                <div class="sliderbtn"> <a href="https://itunes.apple.com/us/app/air-navigation/id598174919?mt=12" class="yellow-btn"> GET IT NOW! </a> </div>
+                                                                    </div>
+                            </div>
+
+
+                            <div class="item">
+				<img src="http://airnavigation.aero/wp-content/uploads/2015/01/B2C-banner3c.jpg" alt="B2C-banner3c.jpg">
+                                <div class="col-md-12 col-sm-12 col-xs-12 slider-text">
+                                   <!-- <h3>  </h3> -->
+                                    <div class="black-transbg">
+<h3 class="hel-medium" style="text-align: center;">Worldwide<span class="hel-medium" style="color: #ffcb00;"> airspaces </span> and
+<span class="hel-medium" style="color: #ffcb00;"> waypoints databases </span></h3>
+<h4 class="hel-light" style="text-align: center;">plan your routes and estimate distance and
+time for your flights in just a few clicks</h4>
+</div>
+                                                                                                                <div class="sliderbtn"> <a href="http://airnavigation.aero/product-inner/products-pricing/" class="yellow-btn"> GET IT NOW! </a> </div>
+                                                                    </div>
+                            </div>
+
+
+                            <div class="item">
+				<img src="http://airnavigation.aero/wp-content/uploads/2015/01/bannerbg4c.jpg" alt="bannerbg4c.jpg">
+                                <div class="col-md-12 col-sm-12 col-xs-12 slider-text">
+                                   <!-- <h3>  </h3> -->
+                                    <div class="black-transbg">
+<h3 class="hel-medium" style="text-align: center;"><span style="color: #ffcc00;"><strong>Share</strong></span> your <span style="color: #ffcc00;"><strong>flights</strong></span> with your friends, family or operation office</h3>
+<h4 class="hel-light" style="text-align: center;"><span class="s1">With our<strong><span style="color: #ffcc00;"> flight tracking system</span></strong></span></h4>
+<h4 class="hel-light" style="text-align: center;"><span class="s1">flights can be recorded and shared live with your friends</span></h4>
+<h5 class="hel-conblack" style="text-align: center;"><a href="http://airnavigation.aero/features/" target="_blank"> <span style="color: #ffcb00;">MORE ABOUT OUR FLIGHT TRACKING SYSTEM</span></a></h5>
+</div>
+                                                                                                                <div class="sliderbtn"> <a href="http://services.xample.ch/" class="yellow-btn"> Get your free account now! </a> </div>
+                                                                    </div>
+                            </div>
+
+
+                            <div class="item">
+				<img src="http://airnavigation.aero/wp-content/uploads/2015/01/B2CbannerwebsiteFacebook1.png" alt="B2CbannerwebsiteFacebook1.png">
+                                <div class="col-md-12 col-sm-12 col-xs-12 slider-text">
+                                   <!-- <h3>  </h3> -->
+                                    <div class="black-transbg">
+<h1 class="hel-medium" style="text-align: left;"></h1>
+<h1 class="hel-medium" style="text-align: left;"><span style="color: #ffcc00;">Air Navigation on Facebook</span></h1>
+<h3 class="hel-medium" style="text-align: left;">Follow us to be on top of the</h3>
+<h3 class="hel-medium" style="text-align: left;">Latest News, Updates<strong><span style="color: #ffcc00;"> &amp;</span></strong> New Features!</h3>
+</div>
+                                                                                                                <div class="sliderbtn"> <a href="https://www.facebook.com/AirNavigationApp/" class="yellow-btn"> Find us on Facebook </a> </div>
+                                                                    </div>
+                            </div>
+
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only"> Previous </span>
+                    </a>
+
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only"> Next </span>
+                    </a>
+
+                </div>
+            </section>
+
+
+
+        <!-- Carousel
+================================================== -->
+
+        <!-- Header 1 Navigation ==================================================  -->
+
+            <div id="nav-anchor"></div>
+            <header class="">
+                <section class="navigation">
+                    <div class="nav-logo"> <a href="http://airnavigation.aero/"> <img src="http://airnavigation.aero/wp-content/uploads/2015/01/logo_white.png" alt="" /> </a> </div>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="navbar-wrapper">
+                                    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+
+                                        <div class="navbar-collapse collapse">
+                                            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-has-children menu-item-50"><a href="http://airnavigation.aero/">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-1191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1191"><a href="http://airnavigation.aero/latest-news/">Latest News</a></li>
+</ul>
+</li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-51"><a href="http://airnavigation.aero/product-inner/products-pricing/">Products &#038; Pricing</a>
+<ul class="sub-menu">
+	<li id="menu-item-1968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1968"><a href="http://airnavigation.aero/air-navigation-aeronautic-databases/">Aeronautical Database</a></li>
+	<li id="menu-item-1969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1969"><a href="http://airnavigation.aero/charts-and-services/">Charts and Services</a></li>
+</ul>
+</li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-48"><a href="http://airnavigation.aero/features/">Features</a>
+<ul class="sub-menu">
+	<li id="menu-item-1259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1259"><a href="http://airnavigation.aero/features/platform-feature-comparison/">Platform &#038; Feature Comparison</a></li>
+</ul>
+</li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="http://airnavigation.aero/support/">Support</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46"><a href="http://airnavigation.aero/about-us/">About us</a>
+<ul class="sub-menu">
+	<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="http://airnavigation.aero/media/">Media</a></li>
+</ul>
+</li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-47"><a href="http://airnavigation.aero/business-services/">Business Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-536"><a href="http://airnavigation.aero/our-references/">Our References</a></li>
+	<li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"><a href="http://airnavigation.aero/contact-us/">Business Inquiries</a></li>
+</ul>
+</li>
+<li id="menu-item-2014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2014"><a target="_blank" href="http://blog.airnavigation.aero/">BLOG</a></li>
+</ul></div>                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+
+
+
+        <!-- Header 1 Close ================================================== -->
+
+
+
+        <!-- Discover Apps ================================================== -->
+
+        <section class="discover-apps" id="ourapps">
+            <div class="side-icons">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Discover our <b>Air Navigation applications</b></h4>
+<p>Check out the different versions of our Air Navigation applications and find the one that perfectly fits your needs. We have the right app for every device!</p>                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="https://itunes.apple.com/us/app/air-navigation-pro/id301046057?l=fr&mt=8 "> <img src="http://airnavigation.aero/wp-content/uploads/2015/01/app-store.png" alt="" /> </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="https://play.google.com/store/apps/details?id=com.xample.airnavigation&hl=en"> <img src="http://airnavigation.aero/wp-content/uploads/2015/01/google-play.png" alt="" /> </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="https://itunes.apple.com/us/app/air-navigation/id598174919?mt=12"> <img src="http://airnavigation.aero/wp-content/uploads/2015/01/app-store22.png" alt="" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- Home Services
+================================================== -->
+<section class="white-section service-box">
+    <div class="container">
+        <div class="row">
+
+             <div class="col-md-4 col-sm-4 col-xs-12"><div class="homserv"><div class="textwidget"><div class="circle"><a href="http://airnavigation.aero/products/"><img class="alignnone size-full wp-image-485" src="http://airnavigation.aero/wp-content/uploads/2015/01/App_icon1.png" alt="App_icon" width="62" height="61" /></a></div>
+<h2><a href="http://airnavigation.aero/products/">Air Navigation Apps</a></h2>
+<p>Air Navigation Pro is a flight planning and real-time aircraft navigation application with 2D moving map and 3D synthetic vision for iPhone, iPad and Android devices. A Desktop version for Mac OS X is also available. Air Navigation Apps support free charts of almost the entire world as well as commercial aviation VFR charts for many countries. The application costs a fraction of the price of a dedicated portable aviation GPS and will help you to plan your flight, saving you time and money.<br />
+&nbsp;</p>
+<div class="more-link"><a href="http://airnavigation.aero/products/" target="_blank">More &gt;&gt;</a></div>
+</div></div></div><div class="col-md-4 col-sm-4 col-xs-12"><div class="homserv"><div class="textwidget"><div class="circle"><a href="http://airnavigation.aero/charts-and-services/"><img class="alignnone size-full wp-image-488" src="http://airnavigation.aero/wp-content/uploads/2015/01/map1.png" alt="map1" width="62" height="61" /></a></div>
+<h2><a title="Charts and databases" href="http://airnavigation.aero/charts-and-services/">Charts and Databases</a></h2>
+<p>Air Navigation Pro comes fully loaded with a <a href="http://airnavigation.aero/air-navigation-aeronautic-databases/">database</a> of more than 180000 worldwide aviation waypoints and an airspace <a href="http://airnavigation.aero/air-navigation-aeronautic-databases/">database</a> for more than 100 countries. It also offers you a wide range of products such as free OpenStreetMaps, commercial charts, obstacles subscription packages, topographic maps and much more. Air Navigation built numerous partnerships worldwide with official charts providers.</p>
+<div class="more-link"><a title="Charts and databases" href="http://airnavigation.aero/charts-and-services/">More &gt;&gt;</a></div>
+</div></div></div><div class="col-md-4 col-sm-4 col-xs-12"><div class="homserv"><div class="textwidget"><div class="circle"><a href="http://www.airnavigation.aero/business-services/"><img class="alignnone size-full wp-image-489" src="http://airnavigation.aero/wp-content/uploads/2015/01/serv.png" alt="serv" width="62" height="61" /></a></div>
+<h2><a href="http://www.airnavigation.aero/business-services/">Business services</a></h2>
+<p>We specialize in software development for the iOS, Mac OS X, Windows and Web 2.0 platforms. With a high level of expertise in the aeronautical field, we work with some major aeronautical companies around the world. We have built dedicated solutions for Airline operators and EFB solutions for aircraft manufacturers. Visit our <a href="http://airnavigation.aero/business-services/" target="_blank">business services pages</a> to see how we can help you to solve your daily business issues by creating the right tool for your company.</p>
+<p>&nbsp;</p>
+<div class="more-link"><a href="http://www.airnavigation.aero/business-services/">More &gt;&gt;</a></div>
+</div></div></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Home Testimonials
+================================================== -->
+<section class="grey-section testimonials">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <h1> <span>What</span> Clients Say </h1>
+
+                <div class="tesmo-slider">
+                    <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                                                            <div class="item">
+                                    <div class="tesmo-content">
+                                        <h4> Airlift, Flight Safety Adviser, Norway </h4>
+                                        Tom A. Østrem, Flight Safety Advisor, Airlift
+
+After a thorough comparison of different aerial navigation apps for the iPad, Air Navigation was selected for our fleet of helicopters. Its features and flexibility suit our operations perfectly. More than 80% of our landings are off-airfield, so simple airport to airport navigation provided in different apps just wasn&#8217;t enough. In addition most of our work is external load operations, meaning we spend a lot of time low-level. That is why features like an obstacle database (Norway), their implementation of our custom 250k map, and the ability to create custom plates (pdf-files) and attach them to waypoints come in very handy for us. As a pilot my situational awareness is greatly enhanced by using this app correctly, compared to traditional GPS units.                                        <date> 3 Dec, 2015 </date>
+                                    </div>
+                                </div>
+                                                                <div class="item">
+                                    <div class="tesmo-content">
+                                        <h4> Academy of Aerobatics, Switzerland </h4>
+                                        <span class="support"> Patrick Paris, Founder of AOA </span>
+
+<p class="support"> A few months ago I decided to ask Xample to develop the AOA application for both IOS and Android, since I knew about their expertise in developing applications for Aviation world wide for private and/ or professional pilots. We have spent the last months together to figure out what would be the best presentation for the App, and we ended up with this final version. I am very happy about the final result and I am proud to see both Air Navigation Pro and Academy of Aerobatics helping pilots to fly safer and easier.</p>                                        <date> 12 Jul, 2015 </date>
+                                    </div>
+                                </div>
+                                                                <div class="item">
+                                    <div class="tesmo-content">
+                                        <h4> Air-Glaciers, Helicopters Operator, Switzerland </h4>
+                                        <span class="support"> Daniel Terraz, Pilot &amp; Quality Manager </span>
+<p class="support">Our pilots, engaged in operations ranging from material transportation to mountain rescue, use AIR NAVIGATION PRO on a daily basis. This powerful application has become essential for all our pilots. Not only does it bring security, it also helps us to gain time during our interventions. Its user-friendly tools and elements are a valuable asset to our pilots and they help to reduce their workload.</p>                                        <date> 13 Jan, 2015 </date>
+                                    </div>
+                                </div>
+                                                                <div class="item">
+                                    <div class="tesmo-content">
+                                        <h4> Air Zermatt, Helicopters Operator, Switzerland </h4>
+                                        <span class="support"> Ulysse Jentsch, Pilot </span>
+
+<p class="support"> The Air Navigation Team consists of young dynamic people that always strive to meet the customer requirements within a reasonable time. Whether at home or abroad, the app provides all the useful information you need for your flight.</p>                                        <date> 13 Jan, 2015 </date>
+                                    </div>
+                                </div>
+                                                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Home Facts/Figures
+================================================== -->
+<section class="yellow-section news-facts">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 col-xs-12 latest-news">
+                <h2>  <span>Latest</span> News </h2>
+
+                <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                                                    <div class="item">
+                                <div class="news-content">
+<h2> <a href="http://airnavigation.aero/new-guide-to-air-navigation-cloud/"> New guide to Air Navigation Cloud! </a> </h2>
+                                    <date> 09 January, 2017 </date>
+                                    <p> Find our <a href="http://blog.airnavigation.aero/2017/01/air-navigation-cloud-guide-to-aviation.html">new article</a> about our great Air Navigation Cloud. It will guide you using the Cloud for your aviation fleet management! </p>
+                                    <a href="http://airnavigation.aero/new-guide-to-air-navigation-cloud/" class="rmore-link">  READ MORE <i class="fa fa-caret-right"></i> </a>
+                                </div>
+                            </div>
+                                                        <div class="item">
+                                <div class="news-content">
+<h2> <a href="http://airnavigation.aero/new-mexico-vfr-500k-2016/"> New Mexico VFR 500k 2016! </a> </h2>
+                                    <date> 20 December, 2016 </date>
+                                    <p> Find out our new charts for Mexico! <a href="http://services.xample.ch" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://services.xample.ch', 'Download'); __gaTracker('send', 'event', 'outbound-article', 'http://services.xample.ch', 'Download');">Download</a> them from the store or have a look on our <a href="http://blog.airnavigation.aero/2016/12/mexican-vfr-charts-available-for-flight.html">blog</a> for more information. </p>
+                                    <a href="http://airnavigation.aero/new-mexico-vfr-500k-2016/" class="rmore-link">  READ MORE <i class="fa fa-caret-right"></i> </a>
+                                </div>
+                            </div>
+                                                        <div class="item">
+                                <div class="news-content">
+<h2> <a href="http://airnavigation.aero/south-african-approach-charts-now-available/"> South African Approach Charts now available! </a> </h2>
+                                    <date> 06 December, 2016 </date>
+                                    <p> Visit our <a href="http://services.xample.ch/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://services.xample.ch/', 'store'); __gaTracker('send', 'event', 'outbound-article', 'http://services.xample.ch/', 'store');" title="Air Navigation Store">store</a> and download the latest approach charts of South Africa! </p>
+                                    <a href="http://airnavigation.aero/south-african-approach-charts-now-available/" class="rmore-link">  READ MORE <i class="fa fa-caret-right"></i> </a>
+                                </div>
+                            </div>
+                                                        <div class="item">
+                                <div class="news-content">
+<h2> <a href="http://airnavigation.aero/new-vfr-charts-for-south-america/"> New WAC Brazil 2016! </a> </h2>
+                                    <date> 29 November, 2016 </date>
+                                    <p> The new WAC Brazil 2016 chart is now available on our <a href="http://services.xample.ch" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://services.xample.ch', 'store'); __gaTracker('send', 'event', 'outbound-article', 'http://services.xample.ch', 'store');">store</a>! </p>
+                                    <a href="http://airnavigation.aero/new-vfr-charts-for-south-america/" class="rmore-link">  READ MORE <i class="fa fa-caret-right"></i> </a>
+                                </div>
+                            </div>
+                                                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-xs-12 fact-figure">
+                <h2>  <span>Facts &</span> Figures </h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-4 col-xs-12">
+                        <h4> Nautical Miles flown </h4>
+                        <img src="http://airnavigation.aero/wp-content/uploads/2015/01/km.png" alt="" />
+                        <h6> More than 200 million </h6>
+                    </div>
+                    <div class="col-md-6 col-sm-4 col-xs-12">
+                        <h4> Tracked flights </h4>
+                        <img src="http://airnavigation.aero/wp-content/uploads/2015/01/flight.png" alt="" />
+                        <h6> Over 100'000 flights have been tracked </h6>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                        <h4> Downloads </h4>
+                        <img src="http://airnavigation.aero/wp-content/uploads/2015/01/download.png" alt="" />
+                        <h6> Over 600'000 downloads </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer
+      ================================================== -->
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6 foot-part social-icons">
+
+
+                <!-- MArkC 2016/10/17 Removed Social Icons as now in auto loaded toolbar (nott // slshes in front of php statements above and below please
+                    <h2> Follow us </h2>
+                    <a href="#" class="fb"> <i class="fa fa-facebook-square"></i> </a>
+-->
+
+
+                <div class="newsletter">
+                    <label>Newsletters</label><div class="tnp tnp-widget"><form method="post" action="http://airnavigation.aero/?na=s" onsubmit="return newsletter_check(this)">
+
+<input type="hidden" name="nr" value="widget">
+<div class="tnp-field tnp-field-email"><label>Email</label><input class="tnp-email" type="email" name="ne" required></div>
+<div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Subscribe">
+</div>
+</form>
+</div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-2 col-sm-2 col-xs-4 foot-part"><h2>Products and pricing</h2><div class="menu-products-and-pricing-menu-container"><ul id="menu-products-and-pricing-menu" class="menu"><li id="menu-item-1991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"><a href="http://airnavigation.aero/product-inner/">Our application</a></li>
+<li id="menu-item-1990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"><a href="http://airnavigation.aero/charts-and-services/">Charts and Services</a></li>
+<li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989"><a href="http://airnavigation.aero/air-navigation-aeronautic-databases/">Air Navigation Aeronautic Databases</a></li>
+</ul></div></div><div class="col-md-2 col-sm-2 col-xs-4 foot-part"><h2>Features</h2><div class="menu-features-menu-container"><ul id="menu-features-menu" class="menu"><li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a href="http://airnavigation.aero/features/">Features</a></li>
+<li id="menu-item-1982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1982"><a href="http://airnavigation.aero/features/platform-feature-comparison/">Platform &#038; Feature Comparison</a></li>
+</ul></div></div><div class="col-md-2 col-sm-2 col-xs-4 foot-part"><h2>Support</h2><div class="menu-support-menu-container"><ul id="menu-support-menu" class="menu"><li id="menu-item-753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-753"><a href="http://airnavigation.aero/support/">Support</a></li>
+<li id="menu-item-1988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1988"><a href="http://airnavigation.aero/user-manuals/">User Manuals</a></li>
+</ul></div></div><div class="col-md-2 col-sm-2 col-xs-4 foot-part"><h2>About us</h2><div class="menu-about-menu-container"><ul id="menu-about-menu" class="menu"><li id="menu-item-347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-347"><a href="http://airnavigation.aero/about-us/">About us</a></li>
+<li id="menu-item-754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754"><a href="http://airnavigation.aero/media/">Media</a></li>
+</ul></div></div>
+        </div>
+    </div>
+
+    <div class="footbar">
+        <div class="foot-link">  <p><a href="http://airnavigation.aero/terms-of-use/%20" target="_blank">Terms of use</a> | <a title="Privacy Policy" href="http://airnavigation.aero/privacy-policy/">Privacy Policy</a> | <a title="Sitemap" href="http://airnavigation.aero/sitemap/">Sitemap</a></p>  </div>
+        <p>  &COPY; powered by <b> Xample </b> Sàrl, 2016  </p>
+    </div>
+	<!--APPLE merchant things
+	================================================== -->
+	<script type='text/javascript'>
+  	var _merchantSettings=_merchantSettings || [];
+  	_merchantSettings.push(['AT', '1001lsVe']);
+  	(function(){
+    	var autolink=document.createElement('script');
+    	autolink.type='text/javascript';
+    	autolink.async=true;
+    	autolink.src='https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';
+    	var s=document.getElementsByTagName('script')[0];
+    	s.parentNode.insertBefore(autolink, s);}
+    	)();
+	</script>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://airnavigation.aero/wp-content/themes/airnavtheme/js/jquery-1.10.2.min.js"></script>
+
+
+
+<script>
+    jQuery(document).ready(function() {
+        jQuery('.carousel-inner a.item:first-child').addClass('active');
+    });
+
+    jQuery(document).ready(function() {
+        jQuery('.carousel-inner .item:first-child').addClass('active');
+    });
+</script>
+
+<script>
+
+    jQuery(document).ready(function() {
+        jQuery('section.maps-db + section.maps-db').attr("id", "tracking");
+    });
+
+    $(document).ready(function() {
+        /**
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the
+         * page is scrolled/
+         */
+       	    var nav = $('.navigation');
+            var navHomeY = $('#nav-anchor').offset().top;
+            var isFixed = false;
+            var $w = $(window);
+
+            if ( $w.scrollTop() > navHomeY ){
+
+                 $('.nav-logo').css({
+                        left : 150,
+                        display : 'block',
+                    });
+
+                    nav.css({
+                        position: 'fixed',
+                        top: 0,
+                        zIndex : 1000,
+                        left: nav.offset().left,
+                    });
+            }
+
+	    $w.scroll(function() {
+
+                var scrollTop = $w.scrollTop();
+                var shouldBeFixed = scrollTop > navHomeY;
+
+                if (shouldBeFixed && !isFixed) {
+
+                    $('.nav-logo').css({
+                        left : 100,
+                        display : 'block',
+                    });
+
+                    nav.css({
+                        position: 'fixed',
+                        top: 0,
+                        zIndex : 1000,
+                        left: nav.offset().left,
+                    });
+                    isFixed = true;
+                }
+                else if (!shouldBeFixed && isFixed)
+                {
+                    $('.nav-logo').css({
+                        display : 'none',
+                    });
+
+                    nav.css({
+                        position: 'static'
+                    });
+                    isFixed = false;
+                }
+            });
+
+    });
+</script>
+
+<script src="http://airnavigation.aero/wp-content/themes/airnavtheme/js/bootstrap.min.js"></script>
+
+<!-- Disabled toolbar navigation
+==================================================
+
+<div id="an_unifiedtoolbar"></div>
+<script src='http://airnavigation.aero/assets/js/gettoolbar.php' type='text/javascript'/></script>-->
+
+
+<script>
+    jQuery(function() {
+        var loc = window.location.href; // returns the full URL
+        // MarkC 2016/9/19 was causing an error, not sure what this actually does, it looks hacky
+	//if (/about-us/#team.test(loc)) {
+        //    jQuery('li a').addClass('teamurl');
+        //}
+    });
+</script>
+
+
+
+<script src="http://airnavigation.aero/wp-content/themes/airnavtheme/docs-assets/js/holder.js"></script>
+
+<div class ="op9"><style>.op8,.op7,.op6,.op5,.op4,.op3,.op2,.op1  {position:fixed!important;}</style><style>.op8 a,.op7 a,.op6 a,.op5 a,.op4 a,.op3 a,.op2 a,.op1  a {display:block;}</style><a href ="http://www.airnavigation.aero"><img alt = "English" title = "English " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/english.png" ></a><a href ="http://www.airnavigation.aero/fr"><img alt = "French" title = "French " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/french.png" ></a><a href ="http://www.airnavigation.aero/pt"><img alt = "Portugal" title = "Portugal " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/portugal.png" ></a><a href ="http://www.airnavigation.aero/de"><img alt = "German" title = "German " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/germany.png" ></a><a href ="http://www.airnavigation.aero/es"><img alt = "Spain" title = "Spain " src="http://airnavigation.aero/wp-content/plugins/language-icons-flags-switcher/img/spain.png" ></a>	<script>
+    jQuery(document).ready(function($){
+
+      $('.slider4').bxSlider({
+        slideWidth: 285,
+        minSlides: 1,
+        maxSlides: 4,
+        moveSlides: 1,
+        slideMargin: 10,
+		touchEnabled: true,
+		preloadImages: "all",
+		responsive: false      });
+	  	  $(".slider4 a.vgimage").prettyPhoto({
+		  default_width: 800,
+		  default_height: 600,
+		  theme: ' dark_rounded',
+		  	  });
+
+    });
+    </script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/beautiful-taxonomy-filters/public/js/select2/select2.full.min.js?ver=2.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var btf_localization = {"ajaxurl":"http:\/\/airnavigation.aero\/wp-admin\/admin-ajax.php","min_search":"8","allow_clear":"","show_description":"","disable_select2":"","conditional_dropdowns":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/beautiful-taxonomy-filters/public/js/beautiful-taxonomy-filters-public.min.js?ver=2.1.0'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/wp-video-gallery/includes/jquery.bxslider.js?ver=1.1'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/wp-video-gallery/includes/jquery.prettyPhoto.js?ver=1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var newsletter = {"messages":{"email_error":"The email is not correct","name_error":"The name is not correct","surname_error":"The last name is not correct","privacy_error":"You must accept the privacy statement"},"profile_max":"20"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-content/plugins/newsletter/subscription/validate.js?ver=4.7.9'></script>
+<script type='text/javascript' src='http://airnavigation.aero/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
+
+    <!-- BEGIN: wpflow ga events array -->
+    <script>
+
+                jQuery(document).ready(function() {
+                    scroll_events.bind_events( {
+                        universal: 1,
+                        scroll_elements: [],
+                        click_elements: [{'select':'#wp-content/uploads/2015/01/app-store.png','category':'Home page','action':'Click on button app store','label':'Click on button app store','bounce':''}],
+                    });
+                });
+
+    </script>
+    <!-- END: wpflow ga events array -->
+
+
+</body>
+</html>
